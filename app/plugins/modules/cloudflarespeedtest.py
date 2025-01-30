@@ -20,7 +20,7 @@ class CloudflareSpeedTest(_IPluginModule):
     # 插件名称
     module_name = "Cloudflare IP优选"
     # 插件描述
-    module_desc = "🌩 测试 Cloudflare CDN 延迟和速度，自动优选IP。"
+    module_desc = "ߌ頦勨Cloudflare CDN 延迟和速度，自动优选IP。"
     # 插件图标
     module_icon = "cloudflare.jpg"
     # 主题色
@@ -245,8 +245,8 @@ class CloudflareSpeedTest(_IPluginModule):
         CloudflareSpeedTest优选
         """
         self._cf_path = self.get_data_path()
-        self._ipv4 = os.path.join(self._cf_path, "ip.txt")
-        self._ipv6 = os.path.join(self._cf_path, "ipv6.txt")
+        self._cf_ipv4 = os.path.join(self._cf_path, "ip.txt")
+        self._cf_ipv6 = os.path.join(self._cf_path, "ipv6.txt")
         self._result_file = os.path.join(self._cf_path, "result_hosts.txt")
 
         # 获取自定义Hosts插件，若无设置则停止
